@@ -7,4 +7,4 @@ const Expired = (time) => {
 };
 
 console.log(new Date());
-console.log(Expired("2022-06-04T09:44:16.112Z"));
+console.log(Expired("2022-06-05"));

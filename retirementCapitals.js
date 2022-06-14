@@ -1,5 +1,5 @@
 // Convert Retirement Capitals
-export default function retirementCapitals(num) {
+function retirementCapitals(num) {
   if (num > 999 && num < 1000000) {
     return (num / 1000).toFixed(1) + "K";
   } else if (num > 1000000) {
@@ -8,3 +8,5 @@ export default function retirementCapitals(num) {
     return num;
   }
 }
+
+console.log(retirementCapitals(5646));

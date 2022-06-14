@@ -1,5 +1,8 @@
 const rms = (name) => {
-  return name.replace(/ /g, "_").replace("/", "_").toLowerCase();
+  return name
+    .replace(/\.|\s|\//gi, "_")
+    .replace(/\'/gi, "")
+    .toLowerCase();
 };
 
-export default rms;
+console.log(rms("Hello people/I'm a string"));
